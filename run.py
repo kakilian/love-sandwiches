@@ -134,7 +134,8 @@ def main():
     sales_columns = get_last_5_entries_sales()
     stock_data = calculate_stock_data()
     update_worksheet(stock_data, "stock")
+    return stock_data
 
 print("Welcome to Sandwiches Data Automation")
-main()
+stock_data = main()
 
